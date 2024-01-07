@@ -5,12 +5,13 @@ import Profile from "./pages/Profile";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Error from "./pages/Error";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold py-2 underline">Hello world!</h1>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
